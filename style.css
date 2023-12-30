@@ -482,6 +482,13 @@ mark,
   border-color: white;
 }
 
+.img-fluid:hover {
+  object-fit: cover;
+  width: 150%;
+  height: 780%;
+  border-color: gold;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -9822,6 +9829,11 @@ button.bg-dark:focus {
   color: #17a2b8 !important;
 }
 
+
+.highlight:hover {
+  background-color: gold;
+}
+
 a.text-primary:hover, a.text-primary:focus {
   color: #824027 !important;
 }
@@ -10109,6 +10121,10 @@ p.lead {
 
 .resume-icon {
   color: white;
+}
+
+.top-resume:hover{
+  filter: brightness(1);
 }
 
 .social-icons .social-icon {
