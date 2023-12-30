@@ -10106,6 +10106,11 @@ p.lead {
     display: block;
   }
 }
+
+.resume-icon {
+  color: white;
+}
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
