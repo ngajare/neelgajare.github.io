@@ -39,7 +39,7 @@ window.addEventListener('resize', resizeCanvas);
 
 // Create particles
 const particles = [];
-const particleCount = 100;
+const particleCount = 60;
 let mouseX = 0;
 let mouseY = 0;
 
@@ -51,10 +51,10 @@ document.addEventListener('mousemove', (e) => {
 
 // Create image objects for particles
 const particleImages = [
-    'curry1.png', // Replace with your image paths
-    'lebron1.png',
-    'messi.png',
-    'palmer2.png'
+    //'curry1.png', // Replace with your image paths
+    'lebron1.png'
+    //'messi.png',
+    //'palmer2.png'
 ];
 
 const loadedImages = [];
@@ -85,10 +85,10 @@ class Particle {
           this.size *= 1.5;
         }
         else if (randomImage === 3) {
-          this.size *= 2;
+          this.size *= 1.75;
         }
-        else if (randomImage === 4) {
-          this.size *= 1.5;
+        else if (randomImage === 0) {
+          this.size *= 2.8;
         }
         this.image = loadedImages[randomImage];
         this.angle = Math.random() * 360; // Random initial rotation
